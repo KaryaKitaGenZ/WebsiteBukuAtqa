@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Usaha Buku Atqa</title>
+    <link rel="stylesheet" href="style.css">
+    <nav class="navbar">
+  <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="produk.html">Produk</a></li>
+     <li><a href="bedah buku artikel.html">Bedah Buku Artikel</a></li>
+     <a href="Testimoni.html">Testimoni</a>
+     <a href="Tampil Testimoni.html">Tampil Testimoni</a>
+     <li><a href="Video Pruduk Event.html">Video Produk Event</a></li>
+     <li><a href="Kontak.html">Kontak</a></li>
+     
+ </ul>
+</nav>
+</head>
+
+<body>
+    <section class="daftar-produk">
+  <div class="produk">
+  <img src="Image/welcome1.jpg">
+  <div class="container">
+  <div class="stat-card">
+      <span class="counter" data-target="1945">0</span>
+  <span class="label">Pengunjung Puas</span>
+
+
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="1945">0</span>
+    <span class="label">Data Pengunjung</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="1000">0</span>
+    <span class="label">Buku Favorit</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="67">0</span>
+    <span class="label">Pengunjung Terbaik</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="666">0</span>
+    <span class="label">Rating Positif</span>
+  </div>
+</div>
+<script>
+  const counters = document.querySelectorAll('.counter');
+  
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      
+      // Mengatur durasi animasi agar halus
+      const speed = 150; 
+      const increment = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 15);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+  </script>
+   
+    <section class="daftar-produk">
+    <div class="produk">
+
+    <h1>Selamat Datang di Usaha Buku Atqa</h1>
+    <h2>Anda bisa mencari aneka buku di toko kami</h2>
+
+    <p>
+        Website ini berisi informasi tentang produk buku, bedah buku,
+        dan testimoni pelanggan.
+    </p>
+
+    <p>
+        Website buku sebaiknya memiliki desain yang bersih, rapi, dan menenangkan.
+    </p>
+
+    <h1>Mengenal Ukuran Buku by Atqa</h1>
+    <p>
+        Ukuran Buku adalah sebuah inisiatif yang berfokus pada kurasi literatur
+        dan apresiasi terhadap objek buku. Di bawah arahan Atqa, platform ini
+        tumbuh menjadi wadah bagi para pecinta buku yang mencari judul-judul
+        berkualitas, mulai dari sastra, filsafat, hingga buku-buku seni yang
+        mungkin sulit ditemukan di toko buku arus utama (mainstream).
+    </p>
+
+    <p>
+        Karakteristik Utama:
+        Kurasi yang personal, estetika visual yang rapi dan minimalis,
+        serta pendekatan komunitas melalui kutipan dan ulasan singkat
+        di media sosial.
+    </p>
+
+    <h1>Jenis-Jenis Buku by Atqa</h1>
+    <p>
+        Buku fiksi berasal dari imajinasi penulis, meskipun terkadang
+        terinspirasi dari kejadian nyata.
+    </p>
+    <p>
+        Novel, novel grafis & komik, antologi cerpen, puisi/sajak,
+        fiksi sejarah, serta fantasi dan sci-fi.
+    </p>
+
+    <h1>Tips Merawat Buku by Atqa</h1>
+    <p>
+        Bersihkan debu secara rutin, hapus noda pensil dengan lembut,
+        dan buka buku secara berkala agar kertas tidak lengket.
+    </p>
+
+    <h1>Informasi Mencari Buku Terbaik</h1>
+    <p>
+        Jika Anda menyukai satu buku, kemungkinan besar Anda akan menyukai
+        karya lain dari penulis atau penerbit yang sama.
+    </p>
+
+    <h1>Lokasi Toko Kami</h1>
+    <p>
+        Tersembunyi di balik riuhnya Jalan Braga, Sudut Baca Kolektif
+        menawarkan suasana tenang dan nyaman bagi pecinta buku.
+    </p>
+
+    <h1>Kontak Admin Toko</h1>
+    <p>
+        Anda dapat menghubungi kami di WhatsApp: 0877-4177-8191
+    </p>
+    </div>
+</section>
+</body>
+
+
+
